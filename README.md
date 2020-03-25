@@ -40,7 +40,7 @@
 
 _当前代码提交频繁, 一些特性时有变化._
 
-很多优秀的前端类库都是为现代浏览器而设计的. [Taro3 Runtime](https://github.com/NervJS/taro/tree/next/packages/taro-runtime) 为我们提供了基础的 BOM/DOM API, 例如 window document. 我们需要自己动手在这个基础上打造一个更接近现代浏览器的运行环境.
+很多优秀的前端类库都是为现代浏览器而设计的. [Taro3 Runtime](https://github.com/NervJS/taro/tree/next/packages/taro-runtime) 为我们提供了基础的 BOM/DOM API, 例如 window document navigator. 我们需要自己动手在这个基础上打造一个更接近现代浏览器的运行环境.
 
 这里搜集了一些扩展 Taro3 运行环境的 [小玩意儿(Polyfill)](https://developer.mozilla.org/zh-CN/docs/Glossary/Polyfill)
 
@@ -71,10 +71,14 @@ const config = {
     mini: {
         webpackChain(chain, webpack) {
             // 注入默认 polyfills (详见下方列表)
-            chain.plugin('taroProviderPlugin').use(TaroProvidePlugin)
+            chain
+                .plugin('taroProviderPlugin')
+                .use(TaroProvidePlugin)
 
             // 注入更多 polyfills
-            // chain.plugin('taroProviderPlugin').use(TaroProvidePlugin, [['default', 'Intl']])
+            // chain
+            //     .plugin('taroProviderPlugin')
+            //     .use(TaroProvidePlugin, [['default', 'Intl']])
         }
     }
 }
