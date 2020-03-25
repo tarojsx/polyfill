@@ -1,0 +1,73 @@
+{
+    "name": "@tarojsx/polyfill",
+    "version": "0.1.0",
+    "description": "Taro3 runtime polyfill",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": "colder",
+    "license": "MIT",
+    "keywords": [
+        "taro",
+        "taro3",
+        "polyfill",
+        "webpack",
+        "react",
+        "reactjs",
+        "wx",
+        "weixin",
+        "wechat",
+        "weapp",
+        "wechat-mini-program",
+        "javascript",
+        "typescript"
+    ],
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tarojsx/polyfill.git"
+    },
+    "homepage": "https://github.com/tarojsx/polyfill",
+    "bugs": {
+        "url": "https://github.com/tarojsx/polyfill/issues"
+    },
+    "scripts": {
+        "start": "tsc --watch",
+        "prebuild": "rimraf dist tsconfig.tsbuildinfo",
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "release": "np"
+    },
+    "dependencies": {
+        "intl": "^1.2.5",
+        "raf": "^3.4.1"
+    },
+    "devDependencies": {
+        "@tarojs/taro": "3.0.0-beta.1",
+        "@tarojs/runtime": "3.0.0-beta.1",
+        "@types/jest": "^25.1.4",
+        "@types/raf": "^3.4.0",
+        "@types/react": "^16.9.25",
+        "@types/webpack": "^4.41.8",
+        "np": "^6.2.0",
+        "react": "^16.13.1",
+        "rimraf": "^3.0.2",
+        "tslib": "^1.11.1",
+        "typescript": "^3.8.3",
+        "webpack": "^4.42.1"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    },
+    "np": {},
+    "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "printWidth": 120
+    }
+}

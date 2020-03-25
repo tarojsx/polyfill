@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "importsNotUsedAsValues": "remove",
+        "resolveJsonModule": true,
+        "lib": ["ESNext", "DOM"],
+        "sourceMap": true,
+        "declaration": true,
+        "importHelpers": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+    "include": ["src"]
+}
