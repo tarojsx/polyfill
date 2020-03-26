@@ -10,8 +10,8 @@ const fetch = [`${prefix}/bom/fetch`, 'fetch']
 
 // const navigator = [`${prefix}/bom/navigator`, 'navigator']
 
-const requestAnimationFrame = [`${prefix}/bom/requestAnimationFrame`, 'requestAnimationFrame']
-const cancelAnimationFrame = [`${prefix}/bom/requestAnimationFrame`, 'cancelAnimationFrame']
+const requestAnimationFrame = ['raf']
+const cancelAnimationFrame = ['raf', 'cancel']
 
 const Intl = ['intl']
 
