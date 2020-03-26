@@ -18,7 +18,7 @@
         <img src="https://badgen.net/npm/dt/@tarojsx/polyfill" alt="npm downloads" />
     </a>
     <a href="https://github.com/tarojsx/polyfill/blob/master/package.json">
-        <img src="https://badgen.net/github/dependents-pkg/tarojsx/polyfill" alt="npm downloads" />
+        <img src="https://badgen.net/github/dependents-pkg/tarojsx/polyfill" alt="dependents" />
     </a>
     <a href="http://makeapullrequest.com">
         <img src="https://badgen.net/badge/PRs/welcome/green" alt="PRs welcome" />
