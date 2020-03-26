@@ -8,8 +8,6 @@ const prefix: string = `${name}/dist`
 
 const fetch = [`${prefix}/bom/fetch`, 'fetch']
 
-// const navigator = [`${prefix}/bom/navigator`, 'navigator']
-
 const requestAnimationFrame = ['raf']
 const cancelAnimationFrame = ['raf', 'cancel']
 
@@ -38,13 +36,6 @@ export class TaroProvidePlugin extends ProvidePlugin {
                 ['window.fetch']: fetch,
             }
         },
-
-        // taro 3.0.0.beta.1 已包含
-        // get navigator() {
-        //     return {
-        //         navigator,
-        //     }
-        // },
 
         get requestAnimationFrame() {
             return {
