@@ -8,6 +8,7 @@
         "importsNotUsedAsValues": "remove",
         "resolveJsonModule": true,
         "lib": ["ESNext", "DOM"],
+        "skipLibCheck": true,
         "sourceMap": true,
         "declaration": true,
         "importHelpers": true,
