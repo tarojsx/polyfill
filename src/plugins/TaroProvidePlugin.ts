@@ -33,9 +33,10 @@ export class TaroProvidePlugin extends ProvidePlugin {
         const defaultIdentifiers: TaroProvidePluginIdentifiers[] = ['fetch']
 
         try {
-            const runtimeRootPath = path.resolve(require.resolve('@tarojs/runtime'), '..', '..')
-            const runtimePackage = require(path.join(runtimeRootPath, 'package.json'))
-            const version = runtimePackage.version
+            const { version } = require(path.join(
+                path.resolve(require.resolve('@tarojs/runtime', { paths: [process.cwd()] }), '..', '..'),
+                'package.json'
+            ))
 
             if (semver.lt(version, '3.0.0-beta.3')) defaultIdentifiers.push('requestAnimationFrame')
             if (semver.lt(version, '3.0.0-alpha.6')) defaultIdentifiers.push('navigator')
