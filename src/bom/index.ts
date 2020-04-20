@@ -1,3 +1,4 @@
 export * from './fetch'
 export * from './navigator'
-export * from './requestAnimationFrame'
+export * from './now'
+export * from './raf'
