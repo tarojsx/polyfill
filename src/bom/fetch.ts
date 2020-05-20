@@ -4,9 +4,9 @@ export const fetch: Window['fetch'] = async (input, init) => {
     const { method, headers: header, body: data } = init
     const res = await Taro.request({
         url: input as string,
-        method: method as Taro.request.Param['method'],
+        method: method as Taro.request.Option['method'],
         dataType: 'text',
-        header,
+        header: header,
         data,
     })
 
@@ -24,10 +24,10 @@ export const fetch: Window['fetch'] = async (input, init) => {
             return res.statusCode >= 200 && res.statusCode < 300
         },
         get headers() {
-            return res.header
+            return res.header as Headers
         },
         get trailer() {
-            return Promise.resolve(res.header)
+            return Promise.resolve(res.header as Headers)
         },
         get url() {
             return input as string
