@@ -49,36 +49,36 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tarojs/api@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.0-rc.0.tgz#41e1a6b9127ccf47c88aa39bd4fc1aa8a6253600"
-  integrity sha1-QeGmuRJ8z0fIiqOb1PwaqKYlNgA=
+"@tarojs/api@3.0.0-rc.1":
+  version "3.0.0-rc.1"
+  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.0-rc.1.tgz#b5ba1f8078c0800d848bd13493c11cc7a6402962"
+  integrity sha1-tbofgHjAgA2Ei9E0k8Ecx6ZAKWI=
   dependencies:
-    "@tarojs/runtime" "3.0.0-rc.0"
+    "@tarojs/runtime" "3.0.0-rc.1"
 
-"@tarojs/router@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.0-rc.0.tgz#cd22b6fe89ef7974e5770d8e5e1dd4282598beb9"
-  integrity sha1-zSK2/onveXTldw2OXh3UKCWYvrk=
+"@tarojs/router@3.0.0-rc.1":
+  version "3.0.0-rc.1"
+  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.0-rc.1.tgz#565173103d97fc60e5ba8917d2c9c593827b364a"
+  integrity sha1-VlFzED2X/GDluokX0snFk4J7Nko=
   dependencies:
-    "@tarojs/runtime" "3.0.0-rc.0"
+    "@tarojs/runtime" "3.0.0-rc.1"
     history "^4.10.1"
     universal-router "^8.3.0"
     url-parse "^1.4.7"
 
-"@tarojs/runtime@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.0-rc.0.tgz#d214da0b792d7b6c54bef2b573a43106fe2edfac"
-  integrity sha1-0hTaC3kte2xUvvK1c6QxBv4u36w=
+"@tarojs/runtime@3.0.0-rc.1":
+  version "3.0.0-rc.1"
+  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.0-rc.1.tgz#ec151c9a0a6444f8fd1814ddf4b5a861bef09e49"
+  integrity sha1-7BUcmgpkRPj9GBTd9LWoYb7wnkk=
 
-"@tarojs/taro-h5@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.0-rc.0.tgz#5de04db1e64287029a2af443bfe44f936df15fae"
-  integrity sha1-XeBNseZChwKaKvRDv+RPk23xX64=
+"@tarojs/taro-h5@3.0.0-rc.1":
+  version "3.0.0-rc.1"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.0-rc.1.tgz#ebde0140c8705bb34ef2b41386b9d4569de5884b"
+  integrity sha1-694BQMhwW7NO8rQThrnUVp3liEs=
   dependencies:
-    "@tarojs/api" "3.0.0-rc.0"
-    "@tarojs/router" "3.0.0-rc.0"
-    "@tarojs/runtime" "3.0.0-rc.0"
+    "@tarojs/api" "3.0.0-rc.1"
+    "@tarojs/router" "3.0.0-rc.1"
+    "@tarojs/runtime" "3.0.0-rc.1"
     base64-js "^1.3.0"
     jsonp-retry "^1.0.3"
     mobile-detect "^1.4.2"
@@ -86,13 +86,13 @@
     unfetch "^4.1.0"
     whatwg-fetch "^2.0.4"
 
-"@tarojs/taro@^3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.0-rc.0.tgz#5ec9053c52c1d2be75d77fd9b6f92c043ac34531"
-  integrity sha1-XskFPFLB0r5113/ZtvksBDrDRTE=
+"@tarojs/taro@^3.0.0-rc.1":
+  version "3.0.0-rc.1"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.0-rc.1.tgz#85f85412329380298f59bdafc9c9febc1d34fe9f"
+  integrity sha1-hfhUEjKTgCmPWb2vycn+vB00/p8=
   dependencies:
-    "@tarojs/api" "3.0.0-rc.0"
-    "@tarojs/taro-h5" "3.0.0-rc.0"
+    "@tarojs/api" "3.0.0-rc.1"
+    "@tarojs/taro-h5" "3.0.0-rc.1"
 
 "@types/anymatch@*":
   version "1.3.1"
