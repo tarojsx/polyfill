@@ -1,4 +1,4 @@
 export * from './fetch'
 export * from './navigator'
-export * from './now'
+export * from './performance'
 export * from './raf'

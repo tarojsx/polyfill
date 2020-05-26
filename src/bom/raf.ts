@@ -1,4 +1,4 @@
-import { now } from './now'
+import { now } from './performance'
 
 let lastTime = 0
 
