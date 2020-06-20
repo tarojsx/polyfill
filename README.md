@@ -28,7 +28,7 @@
 <div align="center">
     Built with :purple_heart: by
     <a href="https://github.com/cncolder">@Colder</a> and
-    <a href="https://github.com/tarojsx/ui/graphs/contributors">
+    <a href="https://github.com/tarojsx/polyfill/graphs/contributors">
         Contributors
     </a>
     <div align="center">
