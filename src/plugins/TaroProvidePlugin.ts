@@ -19,6 +19,9 @@ const cancelAnimationFrame = [`${prefix}/bom/raf`, 'caf']
 
 const Intl = ['intl']
 
+const Storage = [`${prefix}/bom/storage`, 'Storage']
+const localStorage = [`${prefix}/bom/storage`, 'localStorage']
+
 let taroRuntimeVersion = '0.0.0'
 try {
     const { version } = require(path.join(
@@ -45,7 +48,12 @@ export class TaroProvidePlugin extends ProvidePlugin {
     }
 
     static buildDefinitions(identifiers = ['default'] as TaroProvidePluginIdentifiers[]): Record<string, string[]> {
-        const defaultIdentifiers: TaroProvidePluginIdentifiers[] = ['fetch', 'performanceNow', 'requestAnimationFrame']
+        const defaultIdentifiers: TaroProvidePluginIdentifiers[] = [
+            'fetch',
+            'performanceNow',
+            'requestAnimationFrame',
+            'Storage',
+        ]
 
         // if (semver.lt(taroRuntimeVersion, '3.0.0-rc.1')) defaultIdentifiers.push('requestAnimationFrame')
         if (semver.lt(taroRuntimeVersion, '3.0.0-alpha.6')) defaultIdentifiers.push('navigator')
@@ -97,6 +105,15 @@ export class TaroProvidePlugin extends ProvidePlugin {
             return {
                 Intl,
                 ['window.Intl']: Intl,
+            }
+        },
+
+        get Storage() {
+            return {
+                Storage,
+                localStorage,
+                ['window.Storage']: Storage,
+                ['window.localStorage']: localStorage,
             }
         },
     }
