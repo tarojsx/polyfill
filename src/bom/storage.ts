@@ -33,7 +33,7 @@ export class TaroStorage implements Storage {
      */
     key(index: number): string | null {
         const { keys } = Taro.getStorageInfoSync()
-        if (index >= keys.length) return null
+        if (index >= keys.length || index < 0) return null
         return keys[index]
     }
 
