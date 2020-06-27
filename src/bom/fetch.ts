@@ -1,7 +1,7 @@
 import Taro from '@tarojs/taro'
 
-export const fetch: Window['fetch'] = async (input, init) => {
-    const { method, headers: header, body: data } = init
+export const fetch: Window['fetch'] = async (input, init = {}) => {
+    const { method = 'GET', headers: header, body: data } = init
     const res = await Taro.request({
         url: input as string,
         method: method as Taro.request.Option['method'],
