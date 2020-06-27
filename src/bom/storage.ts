@@ -25,7 +25,7 @@ export class TaroStorage implements Storage {
 
         const value = Taro.getStorageSync(keyName)
         if (typeof value === 'string') return value
-        return value
+        return JSON.stringify(value)
     }
 
     /**
