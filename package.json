@@ -38,6 +38,9 @@
         "start": "tsc -w --preserveWatchOutput",
         "prebuild": "rimraf dist tsconfig.tsbuildinfo",
         "build": "tsc",
+        "pretest": "npm run build && taro build --type weapp",
+        "test": "jest",
+        "test:watch": "jest --watch",
         "prepublishOnly": "npm run build",
         "release": "np"
     },
@@ -46,14 +49,39 @@
         "tslib": "^2.0.0"
     },
     "devDependencies": {
-        "@tarojs/taro": "^3.0.0-rc.1",
-        "@types/react": "^16.9.35",
-        "@types/semver": "^7.2.0",
-        "@types/webpack": "^4.41.13",
-        "np": "^6.2.3",
+        "@minapp/wx": "^2.2.1",
+        "@tarojs/mini-runner": "^3.0.0-rc.6",
+        "@tarojs/react": "^3.0.0-rc.6",
+        "@tarojs/runtime": "^3.0.0-rc.6",
+        "@tarojs/taro": "^3.0.0-rc.6",
+        "@tarojs/webpack-runner": "^3.0.0-rc.6",
+        "@types/jest": "^26.0.3",
+        "@types/react": "^16.9.41",
+        "@types/semver": "^7.3.1",
+        "@types/webpack": "^4.41.18",
+        "babel-preset-taro": "^3.0.0-rc.6",
+        "jest": "^26.1.0",
+        "miniprogram-automator": "^0.9.1",
+        "np": "^6.2.4",
+        "react": "^16.13.1",
         "rimraf": "^3.0.2",
-        "typescript": "^3.9.3",
-        "webpack": "^4.43.0"
+        "ts-jest": "^26.1.1",
+        "typescript": "^3.9.5",
+        "webpack": "^4.43.0",
+        "webpack-chain": "^6.4.0"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testRegex": "/test/.*\\.test\\.[t]sx?$",
+        "watchPathIgnorePatterns": [
+            ".+\\.js(on)$",
+            "/config|dist|src/"
+        ],
+        "globals": {
+            "ts-jest": {
+                "isolatedModules": true
+            }
+        }
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org",
