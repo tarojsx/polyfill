@@ -19,7 +19,7 @@ const cancelAnimationFrame = [`${prefix}/bom/raf`, 'caf']
 
 const Intl = ['intl']
 
-const Storage = [`${prefix}/bom/storage`, 'Storage']
+const Storage = [`${prefix}/bom/storage`, 'TaroStorage']
 const localStorage = [`${prefix}/bom/storage`, 'localStorage']
 
 let taroRuntimeVersion = '0.0.0'
