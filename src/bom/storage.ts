@@ -51,7 +51,7 @@ export class TaroStorage implements Storage {
      */
     setItem(keyName: string, keyValue: string): void {
         try {
-            const value = String(keyValue)
+            const value = keyValue === 'string' ? keyValue : JSON.stringify(keyValue)
             Taro.setStorageSync(keyName, value)
         } catch (e) {
             // should throw a "QuotaExceededError" DOMException
@@ -114,7 +114,7 @@ class SessionStorage implements Storage {
      * Throws a "QuotaExceededError" DOMException exception if the new value couldn't be set. (Setting could fail if, e.g., the user has disabled storage for the site, or if the quota has been exceeded.)
      */
     setItem(keyName: string, keyValue: string): void {
-        const value = String(keyValue)
+        const value = keyValue === 'string' ? keyValue : JSON.stringify(keyValue)
         this.storage.set(keyName, value)
     }
 }
