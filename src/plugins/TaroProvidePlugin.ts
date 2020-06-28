@@ -21,6 +21,7 @@ const Intl = ['intl']
 
 const Storage = [`${prefix}/bom/storage`, 'TaroStorage']
 const localStorage = [`${prefix}/bom/storage`, 'localStorage']
+const sessionStorage = [`${prefix}/bom/storage`, 'sessionStorage']
 
 let taroRuntimeVersion = '0.0.0'
 try {
@@ -114,6 +115,7 @@ export class TaroProvidePlugin extends ProvidePlugin {
                 localStorage,
                 ['window.Storage']: Storage,
                 ['window.localStorage']: localStorage,
+                ['window.sessionStorage']: sessionStorage,
             }
         },
     }
