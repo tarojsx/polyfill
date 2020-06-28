@@ -89,8 +89,11 @@ const config = {
 ### 默认
 
 * [x] [fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)
+* [x] [performance.now](https://developer.mozilla.org/zh-CN/docs/Web/API/Performance/now)
 * [x] [requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/window/requestAnimationFrame)
   *  [raf](https://github.com/chrisdickinson/raf)
+* [x] [localStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage)
+* [x] [sessionStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage)
 
 ### 更多
 
