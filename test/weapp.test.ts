@@ -54,7 +54,7 @@ describe('weapp', () => {
     }, 30000)
 
     afterAll(async () => {
-        // miniProgram && (await miniProgram.close())
+        miniProgram && (await miniProgram.close())
     })
 
     describe('polyfill', () => {
