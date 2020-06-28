@@ -62,7 +62,7 @@
         "babel-preset-taro": "^3.0.0-rc.6",
         "jest": "^26.1.0",
         "miniprogram-automator": "^0.9.1",
-        "np": "^6.2.4",
+        "np": "^6.2.5",
         "react": "^16.13.1",
         "rimraf": "^3.0.2",
         "ts-jest": "^26.1.1",
