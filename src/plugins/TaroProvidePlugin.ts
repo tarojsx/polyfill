@@ -112,9 +112,10 @@ export class TaroProvidePlugin extends ProvidePlugin {
         get Storage() {
             return {
                 Storage,
-                localStorage,
                 ['window.Storage']: Storage,
+                localStorage,
                 ['window.localStorage']: localStorage,
+                sessionStorage,
                 ['window.sessionStorage']: sessionStorage,
             }
         },
