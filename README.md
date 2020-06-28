@@ -92,8 +92,8 @@ const config = {
 * [x] [performance.now](https://developer.mozilla.org/zh-CN/docs/Web/API/Performance/now)
 * [x] [requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/window/requestAnimationFrame)
   *  [raf](https://github.com/chrisdickinson/raf)
-* [x] [localStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage)
-* [x] [sessionStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage)
+* [x] [localStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage) by [@Songkeys](https://github.com/Songkeys)
+* [x] [sessionStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage) by [@Songkeys](https://github.com/Songkeys)
 
 ### 更多
 
