@@ -12,6 +12,7 @@ const config: IProjectConfig = {
     outputRoot: 'test/dist',
     framework: 'react',
     alias: {
+        '@': path.resolve(__dirname, '..', 'src'),
         '@tarojsx/polyfill': path.resolve(__dirname, '..'),
     },
     mini: {
