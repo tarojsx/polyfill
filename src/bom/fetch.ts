@@ -1,18 +1,18 @@
-import Taro from '@tarojs/taro'
+import { request } from '@tarojs/taro'
 
 export const fetch: Window['fetch'] = async (input, init = {}) => {
     const { method = 'GET', headers: header, body: data } = init
-    const res = await Taro.request({
-        url: input as string,
-        method: method as Taro.request.Option['method'],
+    const res = await request({
+        url: input,
+        method,
         dataType: 'text',
-        header: header,
+        header,
         data,
-    })
+    } as request.Option)
 
     return {
         get type() {
-            return 'default' as ResponseType
+            return 'default'
         },
         get status() {
             return res.statusCode
@@ -24,13 +24,13 @@ export const fetch: Window['fetch'] = async (input, init = {}) => {
             return res.statusCode >= 200 && res.statusCode < 300
         },
         get headers() {
-            return res.header as Headers
+            return res.header
         },
         get trailer() {
-            return Promise.resolve(res.header as Headers)
+            return Promise.resolve(res.header)
         },
         get url() {
-            return input as string
+            return input
         },
         get redirected() {
             return false
@@ -59,5 +59,5 @@ export const fetch: Window['fetch'] = async (input, init = {}) => {
         clone() {
             return this
         },
-    }
+    } as Response
 }
